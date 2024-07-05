@@ -1,75 +1,139 @@
 .headerContainer {
     width: 100%;
     height: 70px;
-    // background-color: var(--primary-light-color);
     background-color: #040536;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    position: fixed;
+    z-index: 1000;
 
-    .logoContainer {
-        gap: 10px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer img:first-child {
+    width: 70px;
+}
+
+.logoContainer img {
+    width: 200px;
+}
+
+.menuItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+
+
+.menuList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.menuList li {
+    margin: 10px 0;
+}
+
+.menuList li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menuList li a:hover {
+    // text-decoration: underline;
+}
+
+.mobileMenuIcon {
+    display: none; /* Hide on desktop */
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    width: 200px;
+    height: 40%;
+    border: 1px solid var(--tertiary-light-color);
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .menuItems {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        background-color: rgba(4, 5, 54, 0.8); /* Transparent background */
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
-
-        img {
-            &:first-child{
-                width: 70px;
-            }
-            width: 200px;
-        }
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
     }
 
-    .menuItems {
-        ul {
-            display: flex;
-            list-style: none;
+    .menuItems.show {
+        transform: translateY(0);
+    }
 
-            li {
-                margin: 0px 10px;
-                cursor: pointer;
+    .menuList {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+    }
 
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 18px;
-                    font-weight: 500;
-                    cursor: pointer;
+    .menuList li {
+        margin: 10px 0;
+    }
 
-                    &:hover {
-                        // color: var(--tertiary-light-color);
-                        text-decoration: underline;
+    .menuList li a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
 
+    .menuList li a:hover {
+        text-decoration: underline;
+    }
 
-                    }
-                }
+    .mobileMenuIcon {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
 
-                &:active {
-                    color: var(--tertiary-light-color);
-                    font-weight: 600;
-                }
-            }
-        }
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px auto;
+        transition: all 0.3s ease;
     }
 
     .searchContainer {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        // opacity: 0;
         display: none;
-        pointer-events: none;
-
-        .searchInput {
-            width: 200px;
-            height: 40%;
-            border: 1px solid var(--tertiary-light-color);
-            outline: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-        }
     }
-
 }
