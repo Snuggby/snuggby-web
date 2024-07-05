@@ -1,7 +1,7 @@
 import style from "@/styles/global/header.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,10 +12,18 @@ const Header = () => {
   };
 
   return (
+    <>
+    <div style={
+      {
+        height: "70px",
+        width: "100%",
+      }
+    }
+    ></div>
     <div className={style.headerContainer}>
       <div className={style.logoContainer}>
-        <img src="/assets/img/temp.png" alt="temp" />
-        <img src="/assets/img/logo.png" alt="Logo" />
+        <img src="assets/img/temp.png" alt="temp" />
+        <img src="assets/img/logo.png" alt="Logo" />
       </div>
 
       {/* Mobile menu toggle button */}
@@ -29,16 +37,16 @@ const Header = () => {
       <div className={`${style.menuItems} ${showMenu ? style.show : ""}`}>
         <ul className={style.menuList}>
           <li>
-            <a href="#">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="#">Event</a>
+            <Link href="/event">Event</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link href="/aboutUs">About</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
@@ -52,6 +60,7 @@ const Header = () => {
         />
       </div> */}
     </div>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import style from "@/styles/index.module.scss";
 import eventStyle from "@/styles/eventSection.module.scss";
 import InstagramGallery from "@/components/instagramGallery";
 import Carousel from "@/components/carousel";
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -13,18 +14,23 @@ export default function Home() {
             <h2 className={heroStyle.mainheading}>Welcome to Snuggby</h2>
             <h5>where every tail wags and every purr is cherished!</h5>
           </div>
-          <button className={heroStyle.button}>Know our Story</button>
+          
+          <button className={heroStyle.button} >
+          <Link href="/aboutUs">
+            Know our Story
+          </Link>
+            </button>
         </div>
         <div className={heroStyle.rightSection}>
           {/* <div></div> */}
-          <img src="/assets/img/Rectangle7.png" alt="Hero Image" />
+          <img src="assets/img/Rectangle7.png" alt="Hero Image" />
         </div>
       </div>
 
       <div className={style.dedicatedContainer}>
         <h3 className={style.sectionHeading}>
           Dedicated Pet Well-being
-          <img src="/assets/svg/Dog_Paw.svg" alt="Dog Paw" />
+          <img src="assets/svg/Dog_Paw.svg" alt="Dog Paw" />
         </h3>
         <p>
           At Snuggby, We&apos;re committed to safeguarding their well-being,
@@ -42,70 +48,68 @@ export default function Home() {
         <Carousel />
       </div> */}
 
-
-
       <div className={eventStyle.EventContainer}>
         <h3 className={style.sectionHeading}>Our Events</h3>
         <div className={eventStyle.eventCardContainer}>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
             <img
-              src="https://images.pexels.com/photos/16033674/pexels-photo-16033674/free-photo-of-sea-coastline-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              src="assets/img/event.jpeg"
               alt="Event"
             />
             <p className={eventStyle.eventHeading}>Event Heading</p>
@@ -113,10 +117,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={style.OurStorySection}>
+      <div className={style.OurStorySection} id="our-story">
         <h3 className={style.sectionHeading}>Our Story</h3>
         <p className={style.ourStorySubHeading}>
-        Inspired by <strong> Oreo </strong>, Our Beloved Pet Companion
+          Inspired by <strong> Oreo </strong>, Our Beloved Pet Companion
         </p>
         <div className={style.ourStoryContainer}>
           <div className={style.ourStoryText}>
@@ -143,10 +147,10 @@ export default function Home() {
             <p>
               With Snuggby, our aim is to revolutionize the pet care industry by
               leveraging technology to streamline services and enhance the
-              overall experience for everyone involved. Whether you&apos;re a pet
-              parent seeking guidance or a service provider looking to improve
-              your offerings, Snuggby is here to support you every step of the
-              way.
+              overall experience for everyone involved. Whether you&apos;re a
+              pet parent seeking guidance or a service provider looking to
+              improve your offerings, Snuggby is here to support you every step
+              of the way.
             </p>
             <p>
               Join us in our mission to create a world where pet care is
@@ -154,11 +158,8 @@ export default function Home() {
             </p>
           </div>
           <div className={style.ourStoryImage}>
-            <img
-              src="/assets/img/ourStoryIndex.png"
-              alt="Our Story"
-            />
-            </div>
+            <img src="assets/img/ourStoryIndex.png" alt="Our Story" />
+          </div>
         </div>
       </div>
 
