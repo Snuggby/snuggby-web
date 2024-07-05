@@ -1,0 +1,82 @@
+.heroContainer{
+    height: 400px;
+    width: 100%;
+    background-color: red;
+    background: linear-gradient(
+        to right,
+        #CAD4DE 0%,
+        #EBEFF3 100%
+    );
+    padding: 0px 100px ;
+    display: flex;
+    justify-content: space-between;
+
+    .leftSection{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 30px;
+        color: var(--tertiary-color);
+
+        .textSection{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 30px 0px;
+            h2{
+                font-size: 48px;
+                padding: 5px 0px;
+            }
+            h5{
+                font-size: 18px;
+                padding: 0px 2px;
+                font-weight: 500;
+            }
+        }
+
+        button {
+            width: 224px;
+            height: 40px;
+            background-color: var(--primary-light-color);
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            cursor: pointer;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+
+
+            &:hover{
+                background-color: var(--primary-color);
+            }
+        }
+    }
+
+    .rightSection{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+
+        div{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            top: 65px;
+            background-image: url('/assets/img/Rectangle7.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: right;
+        }
+    }
+}
