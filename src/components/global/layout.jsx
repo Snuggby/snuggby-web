@@ -12,7 +12,7 @@ const Layout = (
             </Head>
             <Header />
             <main className="layout">{props.children}</main>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }
