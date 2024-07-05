@@ -16,8 +16,8 @@ export default function Home() {
           <button className={heroStyle.button}>Know our Story</button>
         </div>
         <div className={heroStyle.rightSection}>
-          <div></div>
-          {/* <img src="/assets/img/Rectangle7.png" alt="Hero Image" /> */}
+          {/* <div></div> */}
+          <img src="/assets/img/Rectangle7.png" alt="Hero Image" />
         </div>
       </div>
 
