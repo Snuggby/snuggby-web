@@ -11,8 +11,12 @@ const Layout = (
                 <title>Snuggby</title>
             </Head>
             <Header />
-            <main className="layout">{props.children}</main>
-            {/* <Footer /> */}
+            <main className="layout" style={
+                {
+                    minHeight: "calc(100vh - 75px - 250px);"
+                }
+            }>{props.children}</main>
+            <Footer />
         </>
     )
 }

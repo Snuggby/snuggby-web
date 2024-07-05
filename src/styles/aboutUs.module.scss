@@ -1,0 +1,113 @@
+.aboutUsContainer {
+    .aboutUsHeroSection {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: var(--tertiary-color);
+        background: url('https://img.freepik.com/free-photo/flat-lay-toys-with-food-bowl-fur-brush-dogs_23-2148949620.jpg?t=st=1720209419~exp=1720213019~hmac=077d658472bd24cfd4949e897535123eff8e816c7c0f41b1b15c7348c9f8e5e4&w=2000');
+        background-size: cover;
+        background-position: center;
+
+
+        .aboutHeading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 40px 10px;
+    
+            h1 {
+                font-size: 36px;
+            }
+            p{
+                font-size: 18px;
+            }  
+        }
+    }
+
+    
+
+    .aboutUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 50px 10px;
+
+        .aboutUsSection {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 20px;
+            
+            
+            &:nth-child(odd){
+                align-items: flex-start;
+            }
+
+            &:nth-child(even){
+                align-items: flex-start;
+
+                .aboutUsSectionContentHeading{
+                    border: 3px solid var(--primary-color);
+                    background-color: white;
+
+                    h2{
+                        color: var(--primary-color);
+                    }
+                }
+                
+            }
+
+            .aboutUsSectionContentHeading {
+                background-color: var(--primary-color);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 5px 10px;
+                border-radius: 15px;
+                h2 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: white;
+                    letter-spacing: 3px;
+                }
+            }
+
+            .aboutUsSectionContent {
+                padding: 5px 5px;
+                width: 100%;
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 1.2;
+                    white-space: pre-wrap;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .aboutUsContainer {
+        .aboutUs {
+            .aboutUsSection {
+                width: 100%;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,219 @@
+.contactUsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .contactUsBanner{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        background: url('https://img.freepik.com/free-photo/full-frame-white-wall-background_23-2147835015.jpg?w=2000&t=st=1720203097~exp=1720203697~hmac=7969558f8889b6dab5398f294634a01376ea07db438669ef570f8c77f57b9d2a');
+        background: url('https://img.freepik.com/free-photo/pet-accessories-dry-food_23-2148949596.jpg?t=st=1720209562~exp=1720213162~hmac=815766efd8238e96cd87aa29618ed1098e4a8812c17ecb5af7aa4b2a8ba8f862&w=2000');
+        background-size: cover;
+        background-position: center;
+
+
+        h2{
+            font-size: 36px;
+        }
+
+        p{
+            font-size: 18px;
+        }   
+    }
+    
+    .contactOptions{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .contactOption{
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            img{
+                padding: 10px;
+                border-radius: 50%;
+                width: 100px;
+            }
+
+            .contactContentContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 5px;
+                .contactHeading{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #000;
+                }
+                .contact{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #333;
+                    cursor: pointer;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .addressContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+
+        .heading{
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+        }
+        .addressText{
+            font-size: 18px;
+            font-weight: 400;
+            color: #333;
+        }
+
+        .map{
+            width: 75%;
+            height: 300px;
+
+            iframe{
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+    }
+
+}
+
+.faq{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    .sectionHeading{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .accordion{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .accordionItem{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+       
+            .accordionTitle{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+                border-radius: 5px 5px 0px 0px;
+                background-color: #f5f5f5;
+                cursor: pointer;
+            }
+
+            .accordionContent{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 10px;
+                border-radius: 0px 0px 5px 5px;
+                background-color: #f5f5f5;
+                cursor: pointer;
+
+                p{
+                    font-size: 18px;
+                    text-align: left;
+                }
+                ul{
+                    font-size: 18px;
+                    text-align: left;
+                    list-style: none;
+                    padding-left: 10px;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .contactUsContainer{
+        .contactUsBanner{
+            h2{
+                font-size: 28px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+
+        .contactOptions{
+            flex-direction: column;
+
+            .contactOption{
+                width: 100%;
+                padding: 10px;
+                justify-content: flex-start;
+                img{
+                    width: 80px;
+                }
+                .contactContentContainer{
+                    .contactHeading{
+                        font-size: 18px;
+                    }
+                    .contact{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
