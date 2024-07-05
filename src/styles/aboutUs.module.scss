@@ -6,9 +6,17 @@
         justify-content: center;
         align-items: center;
         // background: var(--tertiary-color);
-        background: url('assets/img/about.jpg');
-        background-size: cover;
-        background-position: center;
+        // background-image: url(/public/assets/img/about.jpg);
+        // background-size: cover;
+        // background-position: center;
+        position: relative;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
 
         .aboutHeading {
@@ -18,17 +26,19 @@
             align-items: center;
             gap: 10px;
             padding: 40px 10px;
-    
+            position: absolute;
+
             h1 {
                 font-size: 36px;
             }
-            p{
+
+            p {
                 font-size: 18px;
-            }  
+            }
         }
     }
 
-    
+
 
     .aboutUs {
         display: flex;
@@ -46,24 +56,24 @@
             align-items: flex-start;
             gap: 10px;
             padding: 20px;
-            
-            
-            &:nth-child(odd){
+
+
+            &:nth-child(odd) {
                 align-items: flex-start;
             }
 
-            &:nth-child(even){
+            &:nth-child(even) {
                 align-items: flex-start;
 
-                .aboutUsSectionContentHeading{
+                .aboutUsSectionContentHeading {
                     border: 3px solid var(--primary-color);
                     background-color: white;
 
-                    h2{
+                    h2 {
                         color: var(--primary-color);
                     }
                 }
-                
+
             }
 
             .aboutUsSectionContentHeading {
@@ -75,6 +85,7 @@
                 gap: 10px;
                 padding: 5px 10px;
                 border-radius: 15px;
+
                 h2 {
                     font-size: 22px;
                     font-weight: 700;
@@ -86,6 +97,7 @@
             .aboutUsSectionContent {
                 padding: 5px 5px;
                 width: 100%;
+
                 p {
                     font-size: 20px;
                     font-weight: 400;
@@ -109,5 +121,5 @@
             }
         }
     }
-    
+
 }

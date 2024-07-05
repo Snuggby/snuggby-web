@@ -1,10 +1,11 @@
-.contactUsContainer{
+.contactUsContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    .contactUsBanner{
+
+    .contactUsBanner {
         width: 100%;
         height: 300px;
         display: flex;
@@ -12,22 +13,31 @@
         justify-content: center;
         align-items: center;
         gap: 16px;
+        position: relative;
         // background: url('https://img.freepik.com/free-photo/full-frame-white-wall-background_23-2147835015.jpg?w=2000&t=st=1720203097~exp=1720203697~hmac=7969558f8889b6dab5398f294634a01376ea07db438669ef570f8c77f57b9d2a');
-        background: url('assets/img/contact.jpg');
-        background-size: cover;
-        background-position: center;
 
 
-        h2{
-            font-size: 36px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-        p{
-            font-size: 18px;
-        }   
+        div {
+            position: absolute;
+
+            h2 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
     }
-    
-    .contactOptions{
+
+    .contactOptions {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -35,7 +45,7 @@
         align-items: center;
         gap: 20px;
 
-        .contactOption{
+        .contactOption {
             width: 300px;
             display: flex;
             flex-direction: row;
@@ -44,39 +54,43 @@
             gap: 20px;
             padding: 20px;
             border-radius: 5px;
-            img{
+
+            img {
                 padding: 10px;
                 border-radius: 50%;
                 width: 100px;
             }
 
-            .contactContentContainer{
+            .contactContentContainer {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
                 gap: 5px;
-                .contactHeading{
+
+                .contactHeading {
                     font-size: 20px;
                     font-weight: 500;
                     color: #000;
                 }
-                .contact{
+
+                .contact {
                     font-size: 18px;
                     font-weight: 400;
                     color: #333;
                     cursor: pointer;
                     text-decoration: none;
-                    &:hover{
+
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
-                
+
             }
         }
     }
 
-    .addressContainer{
+    .addressContainer {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -86,32 +100,33 @@
         text-align: center;
         padding: 20px;
 
-        .heading{
+        .heading {
             font-size: 24px;
             font-weight: 500;
             color: #000;
         }
-        .addressText{
+
+        .addressText {
             font-size: 18px;
             font-weight: 400;
             color: #333;
         }
 
-        .map{
+        .map {
             width: 75%;
             height: 300px;
 
-            iframe{
+            iframe {
                 width: 100%;
                 height: 100%;
-                
+
             }
         }
     }
 
 }
 
-.faq{
+.faq {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -120,12 +135,12 @@
     gap: 20px;
     padding: 20px;
 
-    .sectionHeading{
+    .sectionHeading {
         font-size: 28px;
         text-align: center;
     }
 
-    .accordion{
+    .accordion {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -133,14 +148,14 @@
         align-items: center;
         gap: 20px;
 
-        .accordionItem{
+        .accordionItem {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-       
-            .accordionTitle{
+
+            .accordionTitle {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
@@ -153,7 +168,7 @@
                 cursor: pointer;
             }
 
-            .accordionContent{
+            .accordionContent {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
@@ -165,11 +180,12 @@
                 background-color: #f5f5f5;
                 cursor: pointer;
 
-                p{
+                p {
                     font-size: 18px;
                     text-align: left;
                 }
-                ul{
+
+                ul {
                     font-size: 18px;
                     text-align: left;
                     list-style: none;
@@ -185,31 +201,35 @@
 
 @media screen and (max-width: 800px) {
 
-    .contactUsContainer{
-        .contactUsBanner{
-            h2{
+    .contactUsContainer {
+        .contactUsBanner {
+            h2 {
                 font-size: 28px;
             }
-            p{
+
+            p {
                 font-size: 16px;
             }
         }
 
-        .contactOptions{
+        .contactOptions {
             flex-direction: column;
 
-            .contactOption{
+            .contactOption {
                 width: 100%;
                 padding: 10px;
                 justify-content: flex-start;
-                img{
+
+                img {
                     width: 80px;
                 }
-                .contactContentContainer{
-                    .contactHeading{
+
+                .contactContentContainer {
+                    .contactHeading {
                         font-size: 18px;
                     }
-                    .contact{
+
+                    .contact {
                         font-size: 16px;
                     }
                 }

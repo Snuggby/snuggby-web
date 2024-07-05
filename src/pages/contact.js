@@ -5,8 +5,11 @@ const ContactUs = () => {
     <>
       <div className={style.contactUsContainer}>
         <div className={style.contactUsBanner}>
+          <img src="assets/img/contact.jpg" alt="Contact Banner" />
+          <div className={style.contactUsHeading}>
           <h2>Contact us</h2>
           <p>Let us know how can we help you</p>
+          </div>
         </div>
 
         <div className={style.contactOptions}>

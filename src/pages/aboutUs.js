@@ -4,7 +4,7 @@ const AboutUs = () => {
     <>
       <div className={style.aboutUsContainer}>
         <div className={style.aboutUsHeroSection}>
-          {" "}
+          <img src="assets/img/about.jpg" alt="Hero Image" />
           <div className={style.aboutHeading}>
             <h1>About Us</h1>
             {/* <p>
