@@ -14,6 +14,7 @@
         align-items: center;
         gap: 16px;
         position: relative;
+        background-color: black;
         // background: url('https://img.freepik.com/free-photo/full-frame-white-wall-background_23-2147835015.jpg?w=2000&t=st=1720203097~exp=1720203697~hmac=7969558f8889b6dab5398f294634a01376ea07db438669ef570f8c77f57b9d2a');
 
 
@@ -21,6 +22,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            opacity: 0.5;
         }
 
         div {
@@ -28,10 +30,12 @@
 
             h2 {
                 font-size: 36px;
+                color: white;
             }
-
+            
             p {
                 font-size: 18px;
+                color: white;
             }
         }
 
@@ -58,7 +62,7 @@
             img {
                 padding: 10px;
                 border-radius: 50%;
-                width: 100px;
+                width: 80px;
             }
 
             .contactContentContainer {
@@ -221,7 +225,7 @@
                 justify-content: flex-start;
 
                 img {
-                    width: 80px;
+                    width: 60px;
                 }
 
                 .contactContentContainer {

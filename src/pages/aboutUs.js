@@ -7,12 +7,9 @@ const AboutUs = () => {
           <img src="assets/img/about.jpg" alt="Hero Image" />
           <div className={style.aboutHeading}>
             <h1>About Us</h1>
-            {/* <p>
-              We are a team of passionate pet care experts who are dedicated to
-              providing the best care for your pets. Our team of experts is
-              always ready to assist you with any questions or concerns you may
-              have.
-            </p> */}
+            <p>
+            We, at Snuggby, help Pet Parents make better decisions for their Fur-babies!
+            </p>
           </div>
         </div>
 

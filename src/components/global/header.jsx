@@ -15,7 +15,7 @@ const Header = () => {
     <>
     <div style={
       {
-        height: "70px",
+        height: "65px",
         width: "100%",
       }
     }

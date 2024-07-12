@@ -13,7 +13,7 @@ const Layout = (
             <Header />
             <main className="layout" style={
                 {
-                    minHeight: "calc(100vh - 75px - 250px);"
+                    minHeight: "calc(100vh - 65px - 250px);"
                 }
             }>{props.children}</main>
             <Footer />

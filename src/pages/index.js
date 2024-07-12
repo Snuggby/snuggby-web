@@ -14,21 +14,24 @@ export default function Home() {
             <h2 className={heroStyle.mainheading}>Welcome to Snuggby</h2>
             <h5>where every tail wags and every purr is cherished!</h5>
           </div>
-          
-          <button className={heroStyle.button} >
-          <Link href="/aboutUs">
-            Know our Story
-          </Link>
-            </button>
+
+          <button className={heroStyle.button}>
+            <Link href="/aboutUs">Know our Story</Link>
+          </button>
         </div>
         <div className={heroStyle.rightSection}>
           {/* <div></div> */}
-          <img src="assets/img/Rectangle7.png" alt="Hero Image" />
+          <img src="assets/img/image.png" alt="Hero Image" />
         </div>
       </div>
 
       <div className={style.dedicatedContainer}>
-        <h3 className={style.sectionHeading}>
+        <h3
+          className={style.sectionHeading}
+          style={{
+            color: "var(--primary-color)",
+          }}
+        >
           Dedicated Pet Well-being
           <img src="assets/svg/Dog_Paw.svg" alt="Dog Paw" />
         </h3>
@@ -48,74 +51,54 @@ export default function Home() {
         <Carousel />
       </div> */}
 
-      <div className={eventStyle.EventContainer}>
-        <h3 className={style.sectionHeading}>Our Events</h3>
+      {/* <div className={eventStyle.EventContainer}>
+        <h3
+          className={style.sectionHeading}
+          style={{
+            color: "var(--tertiary-color)",
+          }}
+        >
+          Our Events
+        </h3>
         <div className={eventStyle.eventCardContainer}>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
           <div className={eventStyle.eventCard}>
-            <img
-              src="assets/img/event.jpeg"
-              alt="Event"
-            />
+            <img src="assets/img/event.jpeg" alt="Event" />
             <p className={eventStyle.eventHeading}>Event Heading</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={style.OurStorySection} id="our-story">
         <h3 className={style.sectionHeading}>Our Story</h3>
@@ -158,7 +141,20 @@ export default function Home() {
             </p>
           </div>
           <div className={style.ourStoryImage}>
-            <img src="assets/img/ourStoryIndex.png" alt="Our Story" />
+            <video
+              autoPlay
+              muted
+              loop
+              alt="Our Story"
+              style={{
+                height: "400px",
+                width: "400px",
+                borderRadius: "50%",
+                objectFit: "cover",
+              }}
+            >
+              <source src="assets/img/snuggby.mp4"></source>
+            </video>
           </div>
         </div>
       </div>
